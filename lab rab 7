@@ -4,6 +4,7 @@
 #include <locale.h>
 #define N 5
 using namespace std;
+
 void inmatr(int a[N][N])    //Инициализация матрицы A с клавиатуры
 {
 	int i, j;
@@ -14,8 +15,8 @@ void inmatr(int a[N][N])    //Инициализация матрицы A с к�
 			cout << "A[" << i + 1 << "][" << j + 1 << "]= ";
 			cin >> a[i][j];
 		}
-
 }
+
 void inmatr_f(int a[N][N]) //Инициализация матрицы A из файла
 {
 	int i, j;
@@ -30,6 +31,7 @@ void inmatr_f(int a[N][N]) //Инициализация матрицы A из ф
 	}
 	else cout << "Ошибка открытия. \n";
 }
+
 int *mas_x(int(*a)[N], int *x,  //Заполнение массива X
 	void(*pfunc)(int[N][N]))
 {
@@ -73,6 +75,7 @@ int elem_y(int y, const int x[], int& p, int i) //Поиск Y
 		}
 	}
 }
+
 void output(const int  y, const int x[], const int a[][N]) //Вывод элементов матрицы А и массива Х
 {
 	int i, j;
@@ -119,6 +122,7 @@ void output(const int  y, const int x[], const int a[][N]) //Вывод элем
 	}
 	else cout << "Ошибка открытия. \n";
 }
+
 int main()
 {
 	setlocale(LC_CTYPE, "Russian");
