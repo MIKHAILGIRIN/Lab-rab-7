@@ -53,6 +53,7 @@ int *mas_x(int(*a)[N], int *x,  //Заполнение массива X
 	}
 	return x;
 }
+
 int elem_y(int y, const int x[], int& p, int i) //Поиск Y
 {
 	if (i < N)
